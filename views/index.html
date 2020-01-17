@@ -1,0 +1,735 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Font Finder</title>
+    <link rel="stylesheet" href="reset.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Baumans|Amatic+SC|Bitter|Comfortaa|Dancing+Script|EB+Garamond|Indie+Flower|Lato|Libre+Baskerville|Lobster|Lora|Merriweather|Montserrat|Noto+Sans|Noto+Serif|Open+Sans|Oswald|PT+Serif|Pacifico|Permanent+Marker|Playfair+Display|Poiret+One|Poppins|Raleway|Roboto|Roboto+Condensed|Roboto+Slab|Shadows+Into+Light|Slabo+27px|Source+Sans+Pro|Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="http://code.jquery.com/jquery-1.7.2.min.js"></script>
+    <script src="client.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <h1>The Font Finder</h1>
+      <p>The Essential Font Library</p>
+    </header>
+    <section id="spacer">
+      <p>To embed a font, copy and paste the code into the head section of your html document. </p>
+      <p id="p1">By Michael Manbeck</p>
+    </section>
+    <section id="boxcontent">
+      <article>
+        <h3>Sans-Serif</h3>
+        <p class="specify">
+          Specify in CSS with: <br/>
+          <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style="text-align: center;"
+            >
+              font-family: 'FONT NAME',<span
+                class="collection-drawer-emphasized-code"
+                > sans-serif;</span
+              >
+            </div>
+        </p>
+        <ul>
+          <a href="https://fonts.google.com/specimen/Open+Sans"
+            ><li style="font-family: 'Open Sans', sans-serif ">Open Sans</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Open+Sans</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Roboto"
+            ><li style="font-family: 'Roboto', sans-serif">Roboto</li></a
+          >
+          <p class="sentence"></p>
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Roboto</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Lato"
+            ><li style="font-family: 'Lato', sans-serif">Lato</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Lato</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Montserrat"
+            ><li style="font-family: 'Montserrat', sans-serif">
+              Montserrat
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Montserrat</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Raleway"
+            ><li style="font-family: 'Raleway', sans-serif">Raleway</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Raleway</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Source+Sans+Pro"
+            ><li style="font-family: 'Source Sans Pro', sans-serif">
+              Source Sans Pro
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Source+Sans+Pro</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Roboto+Condensed"
+            ><li style="font-family: 'Roboto Condensed', sans-serif">
+              Roboto Condensed
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Roboto+Condensed</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Oswald"
+            ><li style="font-family: 'Oswald', sans-serif">Oswald</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Oswald</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Poppins"
+            ><li style="font-family: 'Poppins', sans-serif">Poppins</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Poppins</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Noto+Sans"
+            ><li style="font-family: 'Noto Sans', sans-serif">Noto Sans</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Noto+Sans</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </ul>
+      </article>
+      <article>
+        <h3>Serif</h3>
+        <p class="specify">
+          Specify in CSS with: <br/>
+          <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style="text-align: center;"
+            >
+              font-family: 'FONT NAME',<span
+                class="collection-drawer-emphasized-code"
+                > serif;</span
+              >
+            </div>
+        </p>
+        <ul>
+          <a href="https://fonts.google.com/specimen/Merriweather"
+            ><li style="font-family: 'Merriweather', serif">Merriweather</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Merriweather</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Roboto+Slab"
+            ><li style="font-family: 'Roboto Slab', serif">Roboto Slab</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Roboto+Slab</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Playfair+Display"
+            ><li style="font-family: 'Playfair Display', serif">
+              Playfair Display
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Playfair+Display</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/PT+Serif"
+            ><li style="font-family: 'PT Serif', serif">PT Serif</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >PT+Serif</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/EB+Garamound"
+            ><li style="font-family: 'EB Garamound', serif">EB Garamound</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >EB+Garamound</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Lora"
+            ><li style="font-family: 'Lora', serif">Lora</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Lora</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Slabo+27px"
+            ><li style="font-family: 'Slabo 27px', serif">Slabo</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Slabo</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a
+            href="https://fonts.google.com/specimen/https://fonts.google.com/specimen/Noto+Serif"
+            ><li style="font-family: 'Noto Serif', serif">Noto Serif</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Noto+Serif</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Libra+Baskerville"
+            ><li style="font-family: 'Libra Baskerville', serif">
+              Libra Baskerville
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Libra+Baskerville</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Bitter"
+            ><li style="font-family: 'Bitter', serif">Bitter</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Bitter</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </ul>
+      </article>
+      <article>
+        <h3>Script</h3>
+        <p class="specify">
+          Specify in CSS with: <br/>
+          <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style="text-align: center;"
+            >
+              font-family: 'FONT NAME',<span
+                class="collection-drawer-emphasized-code"
+                > cursive;</span
+              >
+            </div>
+        </p>
+        <ul>
+          <a href="https://fonts.google.com/specimen/Indie+Flower"
+            ><li style="font-family: 'Indie Flower', regular">
+              Indie Flower
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Indie+Flower</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Dancing+Script"
+            ><li style="font-family: 'Dancing Script', regular">
+              Dancing Script
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Dancing+Script</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Shadows+Into+Light"
+            ><li style="font-family: 'Shadows Into Light', regular">
+              Shadows Into Light
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Shadows+Into+Light</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Comfortaa"
+            ><li style="font-family: 'Comfortaa', regular">Comfortaa</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Comfortaa</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Amatic+SC"
+            ><li style="font-family: 'Amatic SC', regular">Amatic SC</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Amatic+SC</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Poiret+One"
+            ><li style="font-family: 'Poiret One', regular">Poiret One</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Poiret+One</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Special+Elite"
+            ><li style="font-family: 'Special Elite', regular">
+              Special Elite
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Special+Elite</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Pacifico"
+            ><li style="font-family: 'Pacifico', regular">Pacifico</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Pacifico</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Lobster"
+            ><li style="font-family: 'Lobster', regular">Lobster</li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Lobster</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+          <a href="https://fonts.google.com/specimen/Permanent+Marker"
+            ><li style="font-family: 'Permanent Marker', regular">
+              Permanent Marker
+            </li></a
+          >
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Permanent+Marker</span
+              >&amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+          <br />
+        </ul>
+      </article>
+    </section>
+
+    <footer>
+      <section class="wrapper">
+        <article class="column">
+          <h3>
+            If you want all of these fonts in your project, paste this code into
+            the head section of your html document.
+          </h3>
+          <div ng-switch="embedCode.embedStyle">
+            <!---->
+            <div
+              ng-switch-when="link"
+              ng-mouseup="embedCode.trackEmbedSelection()"
+              class="code-block"
+              style=""
+            >
+              &lt;link href="https://fonts.googleapis.com/css?family=<span
+                class="collection-drawer-emphasized-code"
+                >Abril+Fatface|Amatic+SC|Bitter|Comfortaa|Dancing+Script|Indie+Flower|Lato|Libre+Baskerville|Lobster|Lora|Merriweather|Montserrat|Noto+Sans|Noto+Serif|Open+Sans|Oswald|PT+Serif|Pacifico|Permanent+Marker|Playfair+Display|Poiret+One|Poppins|Raleway|Roboto|Roboto+Condensed|Roboto+Slab|Shadows+Into+Light|Slabo+27px|Source+Sans+Pro|Source+Serif+Pro|Special+Elite</span
+              >
+              &amp;display=swap" rel="stylesheet"&gt;
+            </div>
+            <!---->
+            <!---->
+          </div>
+        </article>
+      </section>
+    </footer>
+  </body>
+</html>
